@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <div className="right flex flex-col justify-around bg-white items-center pr-2">
             <img
-              src="src\components\poojaphoto.jpg"
+              src="src/image/poojaphoto.jpg"
               alt="image"
               className="w-40 rounded-full h-40 object-cover"
             />

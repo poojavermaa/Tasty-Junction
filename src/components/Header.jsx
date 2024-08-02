@@ -9,7 +9,6 @@ import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { useSelector } from "react-redux";
-import { logo } from "../utils/constant";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
@@ -45,7 +44,7 @@ const Header = () => {
           <Link className="flex justify-center items-center pl-14" to="/">
             <img
               className=" pt-4 py-2 logo w-40 lg:w-52"
-              src={logo}
+              src="src/image/logo1.png"
               alt="logo"
             />
           </Link>
@@ -73,7 +72,7 @@ const Header = () => {
             </Link>
            <Link to="/cart">
            <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer">
-              <ShoppingCartOutlinedIcon /> <div className="absolute top-[3.2rem] right-[12rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
+              <ShoppingCartOutlinedIcon /> <div className="absolute top-[3rem] right-[11.2rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
               Cart
             </li>
            </Link>
