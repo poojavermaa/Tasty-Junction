@@ -9,6 +9,7 @@ import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { useSelector } from "react-redux";
+import Badge from '@mui/material/Badge';
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
@@ -44,7 +45,7 @@ const Header = () => {
           <Link className="flex justify-center items-center pl-14" to="/">
             <img
               className=" pt-4 py-2 logo w-40 lg:w-52"
-              src="src/image/logo1.png"
+              src="https://i.postimg.cc/SNGmMFbg/logo1.png"
               alt="logo"
             />
           </Link>
@@ -71,10 +72,16 @@ const Header = () => {
               <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer  max-[1000px]:hidden "><AccountCircleOutlinedIcon /> About me</li>
             </Link>
            <Link to="/cart">
-           <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer">
+           {/* <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer">
               <ShoppingCartOutlinedIcon /> <div className="absolute top-[2.5rem] right-[11.3rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
               Cart
-            </li>
+            </li> */}
+            <div className="cart-btn flex  gap-[5px] justify-center items-center cursor-pointer p-2 ">
+                            <Badge badgeContent={cartItems.length} color="primary">
+                                <ShoppingCartOutlinedIcon />
+
+                            </Badge><div className="cart">CART</div>
+                        </div>
            </Link>
             <Link to="/login"><button
               className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer  w-24"
