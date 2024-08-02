@@ -45,7 +45,7 @@ const Header = () => {
           <Link className="flex justify-center items-center pl-14" to="/">
             <img
               className=" pt-4 py-2 logo w-40 lg:w-52"
-              src="src\components\logo1.png"
+              src="E:\Tasty Junction\Tasty-Junction\src\components\logo1.png"
               alt="logo"
             />
           </Link>
