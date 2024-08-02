@@ -72,7 +72,7 @@ const Header = () => {
             </Link>
            <Link to="/cart">
            <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer">
-              <ShoppingCartOutlinedIcon /> <div className="absolute top-[3rem] right-[11.2rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
+              <ShoppingCartOutlinedIcon /> <div className="absolute top-[2.5rem] right-[11.3rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
               Cart
             </li>
            </Link>
