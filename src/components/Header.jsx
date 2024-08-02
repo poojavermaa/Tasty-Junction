@@ -45,7 +45,7 @@ const Header = () => {
           <Link className="flex justify-center items-center pl-14" to="/">
             <img
               className=" pt-4 py-2 logo w-40 lg:w-52"
-              src="src\image\logo1.png"
+              src="src\components\logo1.png"
               alt="logo"
             />
           </Link>
@@ -73,7 +73,7 @@ const Header = () => {
             </Link>
            <Link to="/cart">
            <li className="p-4 text-lg flex  gap-[5px] justify-center items-center cursor-pointer">
-              <ShoppingCartOutlinedIcon /> <span className="absolute top-[3.2rem] right-[12rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</span>
+              <ShoppingCartOutlinedIcon /> <div className="absolute top-[3.2rem] right-[12rem]  bg-blue-300 text-white text-sm rounded-full w-[1rem] h-[1rem] flex items-center justify-center">{cartItems.length}</div>
               Cart
             </li>
            </Link>
