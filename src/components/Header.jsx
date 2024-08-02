@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-// import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 // import UserContext from "../utils/UserContext";
@@ -10,7 +9,7 @@ import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { useSelector } from "react-redux";
-// import logo from "src/components/logo1.png";
+import { logo } from "../utils/constant";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
@@ -46,7 +45,7 @@ const Header = () => {
           <Link className="flex justify-center items-center pl-14" to="/">
             <img
               className=" pt-4 py-2 logo w-40 lg:w-52"
-              src="image\logo1.png"
+              src={logo}
               alt="logo"
             />
           </Link>
